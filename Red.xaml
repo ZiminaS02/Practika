@@ -1,0 +1,32 @@
+﻿<Window x:Class="ZiminaPractic.Red"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZiminaPractic"
+        mc:Ignorable="d"
+        Title="Red" Height="450" Width="800" Background="Purple">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="log" Background="White" Grid.Row="0" Margin="231,29,0,29" HorizontalAlignment="Left" Width="363" Grid.ColumnSpan="3"/>
+        <TextBox Name="mail" Background="White" Grid.Row="1" Margin="231,29,0,29" HorizontalAlignment="Left" Width="363" Grid.ColumnSpan="3"/>
+        <TextBox Name="pass" Background="White" Grid.Row="2" Margin="231,29,0,29" HorizontalAlignment="Left" Width="363" Grid.ColumnSpan="3"/>
+        <TextBox Background="White" Grid.Row="3" Margin="231,29,0,29" HorizontalAlignment="Left" Width="363" Grid.ColumnSpan="3"/>
+        <TextBlock Grid.Column="0" Grid.Row="0" FontSize="15" TextAlignment="Center" FontStyle="Oblique" Text="ЛОГИН" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="-68,29,68,57"/>
+        <TextBlock Grid.Column="0" Grid.Row="1" FontSize="15" TextAlignment="Center" FontStyle="Oblique" Text="ЭЛ.ПОЧТА" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="-80,29,79,57"/>
+        <TextBlock Grid.Column="0" Grid.Row="2" FontSize="15" TextAlignment="Center" FontStyle="Oblique" Text="ПАРОЛЬ" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="-68,29,68,57"/>
+        <TextBlock Grid.Column="0" Grid.Row="3" FontSize="15" TextAlignment="Center" FontStyle="Oblique" Text="Подтвердить пароль" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="-109,28,109,59"/>
+        <Button x:Name="RegBtn" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="1" Content="ЗАРЕГИСТРИРОВАТЬСЯ" FontSize="20" Margin="16,87,16,23" Grid.RowSpan="2" Click="RegBtn_Click"/>
+    </Grid>
+</Window>
