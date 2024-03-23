@@ -33,10 +33,14 @@ namespace ZiminaPractic
             var user_exist = context.Users.FirstOrDefault(x => x.Login == login && x.Password == password);
             if (user_exist != null)
             {
-                MessageBox.Show("Неправильный логин или пароль!");
+                MessageBox.Show("Такой пользователь уже существует");
                 return;
             }
-            MessageBox.Show("Вы успешно вошли в аккаунт");
+            var user = new User { Login = login, Password = password };
+            context.Users.Add(user);
+            context.SaveChanges();
+
+            MessageBox.Show("Добро пожаловать!");
         }
     }
 }

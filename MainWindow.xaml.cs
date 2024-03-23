@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -25,13 +26,26 @@ namespace ZiminaPractic
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Vhod_Click(object sender, RoutedEventArgs e)
         {
+            var login = log.Text;
+            var password = password.Text;
+            var context = new AppaDbContext();
+            var user_exist = context.Users.FirstOrDefault(x=>x.Login == login && x.Password == password);
+            if (user_exist != null) 
+            {
+                MessageBox.Show("Неправильный логин или пароль");
+                return;
+            }
+            MessageBox.Show("Вы успешно вошли в аккаунт")
 
         }
 
         private void ToReg_Click(object sender, RoutedEventArgs e)
         {
+           Registration registration = new Registration();
+            registration.Show();
+            this.Hide();
 
         }
     }

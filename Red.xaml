@@ -27,6 +27,7 @@
         <TextBlock Grid.Column="0" Grid.Row="1" FontSize="15" TextAlignment="Center" FontStyle="Oblique" Text="ЭЛ.ПОЧТА" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="-80,29,79,57"/>
         <TextBlock Grid.Column="0" Grid.Row="2" FontSize="15" TextAlignment="Center" FontStyle="Oblique" Text="ПАРОЛЬ" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="-68,29,68,57"/>
         <TextBlock Grid.Column="0" Grid.Row="3" FontSize="15" TextAlignment="Center" FontStyle="Oblique" Text="Подтвердить пароль" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="-109,28,109,59"/>
-        <Button x:Name="RegBtn" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="1" Content="ЗАРЕГИСТРИРОВАТЬСЯ" FontSize="20" Margin="16,87,16,23" Grid.RowSpan="2" Click="RegBtn_Click"/>
+        <Button x:Name="RegBtn" Grid.Row="4" Grid.ColumnSpan="2" Content="ЗАРЕГИСТРИРОВАТЬСЯ" FontSize="20" Margin="220,10,79,13" Click="RegBtn_Click"/>
+        <Button  Grid.Row="4" Grid.ColumnSpan="2" Content="АВТОВИЗИРОВАТЬСЯ" FontSize="20" Margin="223,25,98,28" Click="RegBtn_Click" Grid.Column="1"/>
     </Grid>
 </Window>
